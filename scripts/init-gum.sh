@@ -92,12 +92,12 @@ setup_flatpaks() {
       com.heroicgameslauncher.hgl net.lutris.Lutris com.vysp3r.ProtonPlus
       md.obsidian.Obsidian com.valvesoftware.Steam com.github.tchx84.Flatseal
       io.bassi.Amberol app.drey.EarTag de.schmidhuberj.DieBahn
-      io.gitlab.adhami3310.Converter io.github.idevecore.Valuta
+      io.github.idevecore.Valuta dev.edfloreshz.CosmicTweaks
       com.github.ADBeveridge.Raider info.febvre.Komikku com.belmoussaoui.Decoder
       dev.geopjr.Collision org.gnome.gitlab.YaLTeR.Identity
       com.github.finefindus.eyedropper io.github.fizzyizzy05.binary
       page.tesk.Refine com.yubico.yubioath com.bitwarden.desktop
-      io.github.flattool.Warehouse com.tutanota.Tutanota app.drey.Warp
+      io.github.flattool.Warehouse com.tutanota.Tutanota
       io.github.kolunmi.Bazaar org.gnome.gitlab.YaLTeR.VideoTrimmer
       io.github.celluloid_player.Celluloid io.github.giantpinkrobots.varia
       io.github.Faugus.faugus-launcher org.jdownloader.JDownloader
