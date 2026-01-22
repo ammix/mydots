@@ -21,8 +21,6 @@
     ignores = [
       "Session.vim"
       "/.direnv/"
-      "/.zig-cache/"
-      "/zig-out/"
       ".env"
     ];
 
