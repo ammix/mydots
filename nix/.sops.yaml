@@ -1,0 +1,9 @@
+# This file defines the encryption rules for sops
+# Using SSH key for encryption/decryption
+# The age key below is derived from ~/.ssh/id_ed25519
+
+creation_rules:
+  # Home-manager secrets (like API keys)
+  - path_regex: home/secrets/.*\.yaml$
+    age: >-
+      age1wmqplfsjhkkd582yeywrstts59cpv5gah2xhsakqdank6rp0m47sayluhz

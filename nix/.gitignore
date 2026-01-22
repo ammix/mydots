@@ -1,0 +1,30 @@
+# Age keys - never commit these!
+keys.txt
+
+# Note: Encrypted secrets files (*.yaml) are safe to commit
+# Only ignore decrypted versions and temporary files
+
+# Decrypted files
+*.dec
+*.decrypted
+*.plain
+
+# SOPS temporary files
+.sops-*
+*.sops.backup
+
+# Editor temporary files
+*.swp
+*.swo
+*~
+.#*
+
+# macOS
+.DS_Store
+
+# Backup files from home-manager
+*.backup
+
+# Result symlinks from nix builds
+result
+result-*
