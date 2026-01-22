@@ -94,12 +94,11 @@ setup_flatpaks() {
       io.bassi.Amberol app.drey.EarTag de.schmidhuberj.DieBahn
       io.github.idevecore.Valuta dev.edfloreshz.CosmicTweaks
       com.github.ADBeveridge.Raider info.febvre.Komikku com.belmoussaoui.Decoder
-      dev.geopjr.Collision org.gnome.gitlab.YaLTeR.Identity
-      com.github.finefindus.eyedropper io.github.fizzyizzy05.binary
-      page.tesk.Refine com.yubico.yubioath com.bitwarden.desktop
+      org.gnome.gitlab.YaLTeR.Identity com.github.finefindus.eyedropper
+      com.yubico.yubioath com.bitwarden.desktop
       io.github.flattool.Warehouse com.tutanota.Tutanota
       io.github.kolunmi.Bazaar org.gnome.gitlab.YaLTeR.VideoTrimmer
-      io.github.celluloid_player.Celluloid io.github.giantpinkrobots.varia
+      io.github.celluloid_player.Celluloid
       io.github.Faugus.faugus-launcher org.jdownloader.JDownloader
       org.gnome.Papers com.github.jeromerobert.pdfarranger
     )
