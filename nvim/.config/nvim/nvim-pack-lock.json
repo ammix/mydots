@@ -22,7 +22,7 @@
       "src": "https://github.com/Saecki/crates.nvim"
     },
     "friendly-snippets": {
-      "rev": "572f5660cf05f8cd8834e096d7b4c921ba18e175",
+      "rev": "6cd7280adead7f586db6fccbd15d2cac7e2188b9",
       "src": "https://github.com/rafamadriz/friendly-snippets"
     },
     "lazydev.nvim": {
@@ -50,7 +50,7 @@
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
-      "rev": "511e5ccf404f8a96ee31866b079fca033a8a7c4e",
+      "rev": "88f1dfc211c3a2fb47f1451fd5edc972ec697e58",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-ts-autotag": {

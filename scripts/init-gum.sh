@@ -89,7 +89,7 @@ setup_flatpaks() {
   if gum confirm "Install recommended Flatpaks?"; then
     local flatpaks=(
       io.gitlab.librewolf-community app.zen_browser.zen com.discordapp.Discord
-      com.heroicgameslauncher.hgl net.lutris.Lutris com.vysp3r.ProtonPlus
+      com.heroicgameslauncher.hgl com.vysp3r.ProtonPlus
       md.obsidian.Obsidian com.valvesoftware.Steam com.github.tchx84.Flatseal
       io.bassi.Amberol app.drey.EarTag de.schmidhuberj.DieBahn
       io.github.idevecore.Valuta dev.edfloreshz.CosmicTweaks
