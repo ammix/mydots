@@ -8,7 +8,8 @@
 
   home.packages = with pkgs; [
     # neovim
-    inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
+    # inputs.neovim-nightly-overlay.packages.${pkgs.system}.default
+    bob-nvim
     zenity
     zig
     zls
