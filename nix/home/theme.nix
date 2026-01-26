@@ -8,6 +8,16 @@
     size = 24;
   };
 
+  dconf = {
+    enable = true;
+    settings = {
+      "org/gnome/desktop/interface" = {
+        cursor-theme = "Bibata-Modern-Ice";
+        cursor-size = 24;
+      };
+    };
+  };
+
   catppuccin = {
     enable = true;
     flavor = "mocha";

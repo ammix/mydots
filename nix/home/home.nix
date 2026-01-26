@@ -5,11 +5,10 @@
     ./shell
     ./apps
     ./dev
-    ./theme.nix
     ./services
+    ./theme.nix
     ./env.nix
     ./sops.nix
-    ./gnome.nix
   ];
 
   home = {
