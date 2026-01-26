@@ -30,7 +30,7 @@
       "src": "https://github.com/folke/lazydev.nvim"
     },
     "leap.nvim": {
-      "rev": "819388c5546548016b0dab9a72a42aa5a40bf35d",
+      "rev": "572fbcfd2cca5f7b3e56b1ac1d720861f2a4db78",
       "src": "https://codeberg.org/andyg/leap.nvim"
     },
     "mini.nvim": {
@@ -46,11 +46,11 @@
       "src": "https://github.com/mfussenegger/nvim-lint"
     },
     "nvim-lspconfig": {
-      "rev": "419b082102fa813739588dd82e19a8b6b2442855",
+      "rev": "b09c310b48b6d0b5c5795e6f434563b921769ca7",
       "src": "https://github.com/neovim/nvim-lspconfig"
     },
     "nvim-treesitter": {
-      "rev": "88f1dfc211c3a2fb47f1451fd5edc972ec697e58",
+      "rev": "568ede7e79172a0fe7c9d631454a97ad968deaf2",
       "src": "https://github.com/nvim-treesitter/nvim-treesitter"
     },
     "nvim-ts-autotag": {

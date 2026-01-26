@@ -64,7 +64,8 @@
       update = ''
         nix flake update --flake ${config.home.sessionVariables.NH_HOME_FLAKE}
         nh home switch
-        flatpak update
+        bob update
+        flatpak update --assumeyes
       '';
       targz = ''
         set -l dir_name (string trim --right --char=/ $argv[1])

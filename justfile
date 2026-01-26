@@ -13,6 +13,7 @@ delete:
 
 # System Initialization
 init: system-setup bootstrap-nix
+    @fish -c 'bob install nightly'
     @echo 'System initialization complete.'
 
 bootstrap-nix:
