@@ -7,9 +7,6 @@
     shellInit = ''
       set fish_greeting
       set -gx __HM_SESS_VARS_SOURCED ""
-      set -gx EDITOR ${config.home.homeDirectory}/maxim/.local/share/bob/nvim-bin/nvim
-      set -gx SUDO_EDITOR ${config.home.homeDirectory}/maxim/.local/share/bob/nvim-bin/nvim
-      set -gx VISUAL ${config.home.homeDirectory}/maxim/.local/share/bob/nvim-bin/nvim
     '';
 
     # Fix immutable home dir not defaulting to symlink on cosmic

@@ -9,10 +9,8 @@ fi
 if [ -f "${HOME}/.profile" ]; then
   . "${HOME}/.profile"
 fi
+
 # User specific environment and startup programs
-
-export XCURSOR_PATH=${XCURSOR_PATH}:~/.local/share/icons
-
 export EDITOR=${HOME}/.local/share/bob/nvim-bin/nvim
 export SUDO_EDITOR=${HOME}/.local/share/bob/nvim-bin/nvim
 export VISUAL=${HOME}/.local/share/bob/nvim-bin/nvim
