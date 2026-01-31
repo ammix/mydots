@@ -159,3 +159,134 @@ statusline.section_fileinfo = function(args)
 
   return string.format("%s%s", filetype, filetype == "" and "" or " ")
 end
+
+-- Keymaps
+local map = vim.keymap.set
+
+-- Session management (mini.sessions)
+map("n", "<leader>qs", function()
+  local session_name = vim.fn.input("Session name: ")
+  if session_name and session_name ~= "" then
+    require("mini.sessions").write(session_name)
+  end
+end, { desc = "Save session" })
+
+map("n", "<leader>qd", function()
+  require("mini.sessions").select("delete")
+end, { desc = "Delete session" })
+
+map("n", "<leader>ql", function()
+  require("mini.sessions").write("Session.vim")
+end, { desc = "Save local session" })
+
+-- File management (mini.files)
+map("n", "-", function()
+  require("mini.files").open((vim.api.nvim_buf_get_name(0)))
+end)
+
+map("n", "<leader>e", function()
+  require("mini.files").open()
+end, { desc = "Open files" })
+
+-- Search and pick (mini.pick, mini.extra)
+map("n", "<leader>,", function()
+  require("mini.pick").builtin.buffers()
+end, { desc = "Buffers" })
+
+map("n", "<leader>/", function()
+  require("mini.pick").builtin.grep_live()
+end, { desc = "Grep" })
+
+map("n", "<leader><space>", function()
+  require("mini.pick").builtin.files()
+end, { desc = "Find Files" })
+
+map("n", "<leader>ff", function()
+  require("mini.pick").builtin.cli({
+    command = { "fd", "--type=f", "--hidden", "--no-ignore", "--no-follow", "--color=never" },
+  })
+end, { desc = "Find Files (all)" })
+
+map("n", "<leader>fr", function()
+  require("mini.extra").pickers.oldfiles()
+end, { desc = "Recent Files" })
+
+map("n", "<leader>fg", function()
+  require("mini.extra").pickers.git_files()
+end, { desc = "Git Files" })
+
+map("n", "<leader>sd", function()
+  require("mini.extra").pickers.diagnostic()
+end, { desc = "Search Diagnostics" })
+
+map("n", "<leader>sm", function()
+  require("mini.extra").pickers.manpages()
+end, { desc = "Search man pages" })
+
+map("n", "<leader>ss", function()
+  require("mini.extra").pickers.lsp({ scope = "document_symbol" })
+end, { desc = "Document LSP Symbols" })
+
+map("n", "<leader>sS", function()
+  require("mini.extra").pickers.lsp({ scope = "workspace_symbol" })
+end, { desc = "Workspace LSP Symbols" })
+
+map("n", "<leader>sc", function()
+  require("mini.extra").pickers.history()
+end, { desc = "Command History" })
+
+map("n", "<leader>sD", function()
+  require("mini.extra").pickers.spellsuggest()
+end, { desc = "Suggest Spelling" })
+
+map("n", "<leader>se", function()
+  require("mini.extra").pickers.explorer()
+end, { desc = "File Explorer" })
+
+map("n", "<leader>sw", function()
+  require("mini.pick").builtin.grep({ pattern = vim.fn.expand("<cword>") })
+end, { desc = "Grep Word" })
+
+map("n", "<leader>sg", function()
+  require("mini.pick").builtin.grep()
+end, { desc = "Grep Word" })
+
+map("n", "<leader>st", function()
+  require("mini.pick").builtin.grep({ pattern = "TODO|Todo" })
+end, { desc = "Grep Word" })
+
+map("n", "<leader>sT", function()
+  require("mini.pick").builtin.grep({ pattern = "TODO|FIXME|FIX|Todo|Fix|Fixme" })
+end, { desc = "Grep Word" })
+
+map("n", "<leader>sh", function()
+  require("mini.pick").builtin.help()
+end, { desc = "Search Help" })
+
+map("n", "<leader>sk", function()
+  require("mini.extra").pickers.keymaps()
+end, { desc = "Search Keymaps" })
+
+-- Comment (mini.comment)
+map("n", "<C-c>", function()
+  local op = require("mini.comment").operator()
+  return op .. "_"
+end, { expr = true, desc = "Comment current line" })
+
+map("x", "<C-c>", function()
+  return require("mini.comment").operator()
+end, { expr = true, desc = "Comment selection" })
+
+-- Trailspace (mini.trailspace)
+map("n", "<leader>cf", function()
+  require("mini.trailspace").trim()
+end, { desc = "Trim Trailspaces" })
+
+map("n", "<leader>cl", function()
+  require("mini.trailspace").trim_last_lines()
+end, { desc = "Trim last lines" })
+
+-- Diff (mini.diff)
+map("n", "<leader>go", function()
+  require("mini.diff").toggle_overlay(0)
+end, { desc = "Toggle Diff Overlay" })

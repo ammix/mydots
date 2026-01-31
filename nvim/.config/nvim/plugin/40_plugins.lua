@@ -10,6 +10,16 @@ require("leap").opts.equivalence_classes = {
 }
 require("leap.user").set_repeat_keys("<enter>", "<backspace>")
 
+-- Keymaps
+local map = vim.keymap.set
+map({ "n", "x", "o" }, "s", "<Plug>(leap)", { desc = "Leap" })
+map("n", "S", "<Plug>(leap-from-window)", { desc = "Leap from window" })
+map("o", "gr", function()
+  require("leap.remote").action({
+    input = vim.fn.mode(true):match("o") and "" or "v",
+  })
+end)
+
 -- Typst
 require("typst-preview").setup({})
 
